@@ -18,10 +18,10 @@ def main():
 		return
 	
 	for i in range(1,int(sys.argv[1])+1):
-		if not(fizz(i)|buzz(i)):
-			print(i)
-		else:
+		if fizz(i)|buzz(i):
 			print("")
+		else:
+			print(i)
 
 if __name__ == '__main__':
 	main()
